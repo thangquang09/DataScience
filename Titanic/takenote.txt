@@ -1,0 +1,35 @@
+1.Features: Categorical vs Numerical
+categorical: Pclass, sex, Embarked, sibsp, parch
+(du lieu dang phan loai)
+
+numerical: fare, age
+(Du lieu dang so hoc)
+
+blank or null: cabin > age > embarked
+
+mixtypes of data: ticket, cabin
+
+various datatype: int, float
+
+chuyen tu int64 -> categorical
+df['col'].astype('category')
+
+
+2. Tim hieu ve phan bo cua du lieu
+df.describe()
+df.describe(include = ['type'])
+
+
+3.Phan tich va khai pha du lieu:
+-Categorical data:
+Khai pha du lieu dua tren survived
+Truc quan hoa du lieu vs seaborn
+index of list = r*n_cols + c
+
+ +tom tat lai su tuong quan vs survived
+
+-Numberical data:
+Cat du lieu theo quartile
+pd.qcut(train_df['col', number you want to cut)
+
+
